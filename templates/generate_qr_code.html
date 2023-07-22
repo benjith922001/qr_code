@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate QR Code for Open Website Project</title>
+</head>
+<body>
+    <h1>Generated QR Code for Open Website Project</h1>
+    <!-- <form method="POST">
+        {% csrf_token %}
+        <input type="url" placeholder="URL PLEASE" requir
+ed name="url">
+        <button type= "submit" >get qrcode</button>
+     </form>
+     {% for qr in qr_code %} -->
+     <img src="{% url 'generate_qr_code' %}"><br>
+     {%endfor%}
+</body>
+</html>
